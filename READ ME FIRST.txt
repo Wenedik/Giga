@@ -1,0 +1,18 @@
+Viewing Test Tips
+
+The following tips may help determine the cause of a viewing difficulty should one be encountered:
+
+
+ - Be certain the folder Assets/Skins/Default and its contents are on the web server immediately next to the web page '.htm' file and the ZoomifyImageViewerExpress-min.js file.  This folder contains the skin graphics files for the toolbar.  The folder can have a different name or location, however, it would then be necessary to use the zSkinPath parameter in the calling web page in order to state the name and location of the skins folder.  See the 'Toolbar Skinned' example to see this parameter in use.
+ 
+ 
+  - Be sure to use a DOCTYPE in each web page that is compatible with the browsers to be supported.  Microsoft Internet Explorer v11 in particular is very sensitive to DOCTYPE declared.  For example, Microsoft recommends the following:
+ 
+		<!DOCTYPE html><html xml:lang="EN" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ 
+	Other declarations common in web pages may cause the initial display to be small and/or mis-positioned. For example:
+ 
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+
+ - Browser security precautions have become more strict and current versions of all browsers except Firefox now prevent dynamic loading of certain local files - effectively blocking local viewing of Zoomify Images.  ZIF and PFF files in particular, may not be viewed on a local machine.  For local testing, please use Zoomify Folder storage, use Firefox, and/or use use settings supported by most browsers to enable local file access. Additional information will be added to the Support page on the Zoomify website at www.zoomify.com as it becomes available.
